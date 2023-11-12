@@ -1,27 +1,38 @@
-# Workshop7Starter
+# GDSC Workshop 7 (Angular + Typescript)
+## Hosted by: Daniel Henricks
+All starter code is written by the GDSC Tech Leads.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+## About Angular
+View Angular's website here: https://angular.dev/
 
-## Development server
+Angular is a widely-used open-source web application framework developed and maintained by Google. Angular simplifies the process of building dynamic web applications by providing a structured framework for creating maintainable code. Its key features include two-way data binding (as covered today) and the particular structure of components.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Angular utilizes TypeScript. TypeScript is essentially JavaScript code with more strict type checking. We won't go too into detail about it during this workshop, but there will be noticable syntax differences.
 
-## Code scaffolding
+## Prerequisites:
+- You have Node.js installed
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to start this workshop:
+1) You must install Angular's command-line interface (CLI). Run the following command: 
+```bash
+npm install -g @angular/cli
+```
+2) Test to make sure the installation worked by running the command:
+```bash
+ng --help
+```
 
-## Build
+## What will we learn today?
+1) Why using Angular would make development easier.
+2) How to create an Angular component using the command 
+```bash
+ng generate component [component-name]
+```
+3) ``` ngModel, *ngIf, *ngFor```. To be seen in our form.component files.
+4) The structure of Angular's typescript files and what the ```app.module.ts``` file does.
+5) (If time permits) Deploying an app to GitHub Pages (a 'real' website!)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## How do I install to gh-pages?
+1) Run ```ng build --configuration=production```
+2) Add the option baseHref into the angular.json
+3) ng deploy
